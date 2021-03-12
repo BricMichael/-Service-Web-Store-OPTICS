@@ -33,9 +33,47 @@ img{
 	font-family: 'Inconsolata';
 	font-weight: 600;
 }
-
+/*estilos del navbar que se oculta*/
 .main-nav{
-	display: none;
+	opacity: 0;
+	visibility: hidden;	
+	transition: all .3s;
+	z-index: 9999;
+}
+
+.menu{
+	position: absolute;
+	top: 10.8em;
+	left: 0;
+	background: rgba(33, 33, 33,0.9);
+	width: 100%;
+	list-style: none;
+	padding: 20px;
+	margin: auto;		
+	height: 310px;
+}
+
+.menu__item{
+	padding: 13px;
+	text-align: center;
+	width: 150px;
+	margin: 12px 22%;
+	border: 1px solid #ff4e00;
+
+}
+
+.menu__link{
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	font-size: 19px;
+	
+}
+
+.mostrar{
+	opacity: 1;
+	visibility: visible;
 }
 
 .main-help{
@@ -54,6 +92,7 @@ img{
 	padding: 10px 16px;
 	cursor: pointer;
 	margin-top: 16px;
+	margin-left: auto;
 }
 .main-help__btn{
 	display: block;
@@ -67,7 +106,7 @@ img{
 .help-input{
 	display: block;
 	padding: 12px 0 12px 6px;
-	width: 160px;
+	width: 50%;
 }
 
 .color{
@@ -345,3 +384,72 @@ img{
 	padding-bottom: 10px;
 	margin: 15px 0;
 }
+/*Estilos menores a 363 pixeles*/
+@media screen and (max-width: 363px){
+	.main-help__btn{
+		display: block;
+		padding: 7px 9px;
+		color: #454546;
+		border: 1px solid #454546;
+		text-decoration: none;
+		font-size: 16px;
+	}
+	
+	.help-input{
+		display: block;
+		padding: 7px 4px;
+		width: 130px;
+	}
+}
+
+@media screen and (max-width: 308px){
+	.main-header__txt {
+		padding: 10px 0;
+		font-size: 13px;
+	}
+	.main__title {
+		text-align: left;
+		font-size: 1.6em;
+		color: #454546;
+		margin: 10px 0;
+		font-family: 'Inconsolata';
+		font-weight: 700;
+	}
+	.main-help__btn{
+		display: block;
+		padding: 6px 9px;
+		color: #454546;
+		border: 1px solid #454546;
+		text-decoration: none;
+		font-size: 13px;
+	}
+
+	.help-input {
+		display: block;
+		padding: 5px;
+		width: 80px;
+	}
+
+}
+
+/*Estilos responsive para tablet*/
+
+@media screen and (min-width:768px) {
+
+	.slider{
+		height: 400px;
+	}
+	.editor__item {
+		height: 330px;
+		position: relative;
+		overflow: hidden;
+	}
+	.main-help__btn{
+		padding: 12px 25px;
+		width: 15%;
+		font-size: 22px;
+		text-align: center;
+	}
+}
+
+/*Estilos para Desktop*/
