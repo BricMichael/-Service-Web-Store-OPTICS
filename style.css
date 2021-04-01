@@ -55,7 +55,12 @@ img{
 .menu__item{
     padding: 5px;
     text-align: center;
-    margin: 20px 0px;
+	margin: 20px 3px;
+	border: 1px solid #ff4e00;
+}
+
+.menu__item:hover {
+	background: rgba(255, 78, 0, 0.3);
 }
 
 .menu__link{
@@ -101,7 +106,7 @@ img{
 .help-input{
 	display: block;
 	padding: 12px 0 12px 6px;
-	width: 50%;
+	width: 80%;
 }
 
 .color{
@@ -435,6 +440,15 @@ img{
 
 }
 
+
+@media screen and (min-width:363px) {
+	.help-input {
+		display: block;
+		padding: 8px;
+		width: 60%;
+	}
+}
+
 /*Estilos responsive para tablet*/
 
 @media screen and (min-width:768px) {
@@ -450,6 +464,12 @@ img{
 	.main-help__btn{
 		font-size: 22px;
 		text-align: center;
+	}
+
+	.help-input {
+		display: block;
+		padding: 8px;
+		width: 70%;
 	}
 }
 
@@ -516,10 +536,6 @@ img{
 		color: #111;
 	}
 
-	.menu__link:hover {
-		background: #333;
-		color: #fff;
-	}
 
 	
 }
