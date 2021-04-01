@@ -55,12 +55,13 @@ img{
 .menu__item{
     padding: 5px;
     text-align: center;
-	margin: 20px 3px;
-	border: 1px solid #ff4e00;
+	margin: 20px 3px;	
+	border-bottom: 1px solid #333;
 }
 
 .menu__item:hover {
-	background: rgba(255, 78, 0, 0.3);
+	background: #8f8f96;
+
 }
 
 .menu__link{
@@ -266,7 +267,14 @@ img{
 .product__icon{
 	display: block;
 	margin-top: 20px;
+	font-size: 24px;
 }
+
+.product__icon:hover {
+	cursor: pointer;
+	color: #ff4e00;
+}
+
 /* TESTIMONIALS*/
 .container__testimonials{
 	text-align: center;
@@ -274,7 +282,7 @@ img{
 	background: #f7f7f7;
 	padding: 20px;
 	margin: 20px 0;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0,0,0,0.18);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 16px rgba(0,0,0,0.18);
 }
 
 .testimonial__txt{
@@ -476,6 +484,12 @@ img{
 /*Estilos para Desktop*/
 
 @media screen and (min-width:1024px){
+
+	.container--flex{
+		width: 1000px;
+		margin: auto;
+	}
+
 	.icon-menu{
 		display: none;
 	}
@@ -488,6 +502,22 @@ img{
 		padding-top: 20px;
 		flex-wrap: wrap;
 		align-content: flex-start;
+	}
+
+	.help-input {
+		display: block;
+		padding: 8px;
+		width: 80%;
+		border: 1px solid #333;
+	}
+
+	.main {
+		width: 80%;
+		margin: auto;
+	}
+
+	.main-header__txt {
+		width: 100%;
 	}
 
 	.main-help:nth-child(2){
@@ -505,11 +535,15 @@ img{
 		width: 70px;
 		padding: 10px;
 		margin: 20px 0px 20px 0px;
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.fa-shopping-cart{
 		padding-left: 5px;
+	}
+
+	.fa-shopping-cart:hover{
+		color: #ff4e00;
 	}
 
 	.main__title{
@@ -536,6 +570,67 @@ img{
 		color: #111;
 	}
 
+	.main-nav {
+		visibility: visible;
+		opacity: 1;
+		width: 90%;
+		margin: 20px auto;
+	}
 
-	
+	.container-prooducts{
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px;
+	}
+	.product__img {
+		height: 200px;
+	}
+}
+
+@media screen and (min-width:1280px){
+
+	.container--flex{
+		width: 1200px;
+	}
+
+	.main-nav {
+		visibility: visible;
+		opacity: 1;
+		width: 90%;
+		margin: 20px auto;
+	}	
+	.main-help:nth-child(3){
+		padding-left: 70px;
+		
+	}
+	.slider {
+		height: 450px;
+	}
+}
+
+@media screen and (min-width:1600px){
+
+	.container--flex{
+		width: 1500px;
+	}
+
+	.main-help:nth-child(3){
+		padding-left: 90px;	
+	}
+
+	.main-help:nth-child(2){
+		font-size: 1.5em;
+	}
+
+	.slider {
+		height: 600px;
+	}
+
+	.main {
+		width: 88%;
+		margin: auto;
+	}
+	.product__img {
+		height: 220px;
+	}
+
 }
