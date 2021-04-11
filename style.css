@@ -12,6 +12,11 @@
 	box-sizing: 0;
 	margin: 0;
 }
+
+html {
+	scroll-behavior: smooth;  
+}
+
 body{
 	font-family: sans-serif;
 }
@@ -479,6 +484,14 @@ img{
 		padding: 8px;
 		width: 70%;
 	}
+	.container__testimonials{
+		font-size: 1.3em;
+	}	
+	.container-autentics {
+		display: flex;
+		align-items: center;
+		margin: 1rem;
+	}
 }
 
 /*Estilos para Desktop*/
@@ -536,6 +549,7 @@ img{
 		padding: 10px;
 		margin: 20px 0px 20px 0px;
 		font-size: 15px;
+		width: 90px;
 	}
 
 	.fa-shopping-cart{
@@ -583,6 +597,25 @@ img{
 	}
 	.product__img {
 		height: 200px;
+	}
+
+	.container-editor{
+		display: flex;
+		justify-content: space-between;
+	}
+	.editor__item {
+		width: 45%;
+	}
+	.footer_container{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+		align-items: start;
+	}
+	.footer-txt{
+		grid-column-start: span 4;
+		text-align: center;
+
 	}
 }
 

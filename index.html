@@ -21,11 +21,11 @@
 				<span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
 				<nav class="main-nav"  id="main-nav">
 					<ul class="menu">
-						<li class="menu__item"><a href="" class="menu__link">HOME</a></li>
-						<li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
-						<li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
-						<li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
-						<li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+						<li class="menu__item"><a href="#home" class="menu__link">HOME</a></li>
+						<li class="menu__item"><a href="#about" class="menu__link">ABOUT</a></li>
+						<li class="menu__item"><a href="#features" class="menu__link">FEATURES</a></li>
+						<li class="menu__item"><a href="#shop" class="menu__link">SHOP</a></li>
+						<li class="menu__item"><a href="#contact" class="menu__link">CONTACT</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -42,7 +42,7 @@
 			</div>	
 		</div>
 	</header>
-	<div class="container-slider">
+	<div class="container-slider" id='home'>
 		<div class="slider" id="slider">
 			<div class="slider__section">
 				<img src="img/slider.jpg" class="slider__img" alt="Gafas playa-sol">
@@ -79,7 +79,7 @@
 		<div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
 	</div>
 	<main class="main">
-		<div class="container">
+		<div class="container" id="shop">
 			<h2 class="main__title">New Arrivals for you</h2>
 			<section class="container-prooducts">
 				<div class="product">
@@ -187,7 +187,7 @@
 				Earum commodi natus inventore qui sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 		</section>
 
-		<div class="container-editor">
+		<div class="container-editor" id='features'>
 			<div class="editor__item">
 				<img class="editor__img" src="img/lent-man.jpg" alt="lentes-Women">
 				<p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
@@ -198,7 +198,7 @@
 			</div>
 		</div>
 
-		<section class="container-autentics">
+		<section class="container-autentics" id='about'>
 			<div class="originals">
 				<i class="far fa-hand-paper"></i>
 				<h2 class="originals_title">Satisfaction Guaranteed</h2>
@@ -220,7 +220,7 @@
 		</section>
 	</main>
 
-	<footer class="footer_container">
+	<footer class="footer_container" id='contact'>
 		<div class="section-footer">
 			<h2 class="footer-title">About Us</h2>
 			<p class="footer-txt">Curabitur non nul la sit amet nislinit tempues convallis quis ac lectus. Lac inia eget consectetur sed, convallis at lellus.
@@ -233,13 +233,14 @@
 			<p class="footer-txt">Phone: +121 369 847 3647</p>
 			<p class="footer-txt">Email: opticsTop@hotmail.com</p>
 		</div>
+	</ul>
 		<div class="section-footer">
 			<h2 class="footer-title">Quick Links</h2>
-			<a href="" class="footer-enlace">Home</a>
-			<a href="" class="footer-enlace">About</a>
-			<a href="" class="footer-enlace">Error</a>
-			<a href="" class="footer-enlace">Shop</a>
-			<a href="" class="footer-enlace">Contact</a>
+			<a href="#home" class="footer-enlace">Home</a>
+			<a href="#about" class="footer-enlace">About</a>
+			<a href="#features" class="footer-enlace">FEATURES</a>
+			<a href="#shop" class="footer-enlace">Shop</a>
+			<a href="#contact" class="footer-enlace">Contact</a>
 		</div>
 		<div class="section-footer">
 			<h2 class="footer-title">Sing Up for your offers</h2>
